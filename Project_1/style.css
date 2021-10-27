@@ -28,7 +28,7 @@ body{
   margin: 5px;
   cursor: pointer;
   flex: 0.5;
-   
+  transition: flex 0.7s ease-in;
 }
 .panel h3{
 font-size: 24px;
@@ -43,7 +43,9 @@ opacity: 0;
 }
 .panel.active h3{
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
+
 @media(max-width: 480px){
   .container{
     width: 100vw;
